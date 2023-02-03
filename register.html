@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student's Registration Form</title>
+        <style>
+            body{
+                background-image: url('w/DSC_0080 (3).JPG');
+                background-position: relative;
+                background-size: cover;
+            }
+       
+            h1{
+                text-align: center;
+                color: black;
+            }
+
+            form{
+                background: wheat;
+                background-color: rgba(30, 251, 255, 0.429);
+                text-align: center;
+                max-width: 400px;
+                margin: 0 auto 100px;
+                padding: 3px;
+                position: relative;
+                color: azure;
+                color:black;
+                
+            }
+            form input{
+                font-size: "Roboto" san serif;
+                background: rgba(245, 245, 245, 0.947);
+                width: 90%;
+                margin: 0 0 auto 14px;
+                box-sizing: border-box;
+                padding: 13px;
+                border:0;
+                outline: 1;
+                color: rgba(43, 43, 226, 0.888);
+            }
+            button{
+                background: green;
+                background-color: rgba(86, 226, 43, 0.877);
+                padding: 10px;
+                margin: 0 0 7px;
+                width: 50%;
+                text-transform: uppercase;
+                color:white;
+                cursor: pointer;
+                border: 0;
+            }
+            .home{
+            display: inline-block;
+            text-decoration: none;
+            color: rgba(51, 61, 167, 0.874);
+            border: 0;
+            padding: 12px 34px;
+            font-size: 15px;
+            background:rgba(150, 222, 135, 0.687);
+            position: relative;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 11px;
+
+        }
+            .home:hover{
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1.5s;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>ONLINE REGISTRATION FORM!</h1>
+        <form action="group5.php" method="post">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="enter your fistname" required='please enter your name'/>
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" class="form-control" name="surname" id="surname" placeholder="enter surname" required/>
+            </div>
+            <div class="form-group">
+                <label for="pssword">password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="enter your password" required/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Adress</label>
+                <input type="email"  id="email" name="email"  class="form-control" placeholder="enter your email" required/>
+            </div>
+            <div class="form-group">
+                <label for="number">phone number</label>
+                <input type="number" name="number" id="number" class="form-control" placeholder="enter your phone number" required/>
+            </div>
+            <div>
+                <br>
+                <button input type="submit">register</button>
+            </div>
+             registered? <br>
+            <a href="login.html">LOG IN HERE</a>
+            <br><br>
+            <a href="index.html" class="home">home</a>
+        </form>
+    </body>
+</html>
